@@ -1,5 +1,5 @@
 # `python-base` sets up all our shared environment variables
-FROM python:3.12-slim as python-base
+FROM python:3.12-slim AS python-base
 
     # python
 ENV PYTHONUNBUFFERED=1 \
@@ -47,7 +47,7 @@ RUN curl -sSL https://install.python-poetry.org | python3 -
 # install postgres dependencies inside of Docker
 RUN apt-get update \
     && apt-get -y install libpq-dev gcc \
-    && pip install psycopg2
+    && pip install psycopg
 
 # copy project requirement files here to ensure they will be cached.
 WORKDIR $PYSETUP_PATH
