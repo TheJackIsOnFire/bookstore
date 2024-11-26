@@ -25,7 +25,7 @@ SECRET_KEY = "django-insecure-9oo4ilkuwgg4f1%0ivt0!@^l7s&=npdh30@a%_g@*z9#!k4$v3
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'https://theoldjack.pythonanywhere.com/']
 
 
 # Application definition
@@ -157,3 +157,5 @@ INTERNAL_IPS = [
 # 'DJANGO_ALLOWED_HOSTS' should be a single string of hosts with a space between each host
 # Example: 'DJANGO_ALLOWED_HOSTS=localhost 127.0.0.1 [::1]'
 #ALLOWED_HOSTS = os.environ.get("DJANGO_ALLOWED_HOSTS", "").split(" ")
+
+
